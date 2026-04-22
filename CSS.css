@@ -45,7 +45,7 @@ body {
 .content {
     flex: 1;
     overflow-y: auto;
-    padding-bottom: 100px;
+    padding-bottom: 110px;
 }
 
 .content::-webkit-scrollbar {
@@ -578,10 +578,12 @@ body {
 
 /* Bottom Navigation */
 .bottom-nav {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
+    max-width: 480px;
+    margin: 0 auto;
     height: 80px;
     background: white;
     border-top: 1px solid var(--neutral-100);
@@ -590,6 +592,7 @@ body {
     align-items: flex-start;
     padding-top: 8px;
     gap: 0;
+    z-index: 20;
 }
 
 .nav-item {
@@ -664,7 +667,7 @@ body {
     }
 
     .content {
-        padding-bottom: 90px;
+        padding-bottom: 120px;
         overflow-y: auto;
     }
 
